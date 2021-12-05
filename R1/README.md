@@ -14,3 +14,4 @@ Learn about print, input commands on Python
 Need to find out the time tracking app and Git / Linux commands
 
 ### Day 002
+Data types and mathematics operators
