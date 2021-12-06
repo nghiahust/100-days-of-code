@@ -15,3 +15,6 @@ Need to find out the time tracking app and Git / Linux commands
 
 ### Day 002
 Data types and mathematics operators
+
+### Day 003
+If - Else
