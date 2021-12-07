@@ -18,3 +18,6 @@ Data types and mathematics operators
 
 ### Day 003
 If - Else
+
+### Day 004
+Lear about list, indexing, and ranndom
