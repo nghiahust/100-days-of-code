@@ -24,3 +24,17 @@ Lear about list, indexing, and ranndom
 
 ### Day 005
 Lear about loop and password generator
+
+### Day 006
+
+
+### Day 007
+
+
+### Day 008
+
+
+### Day 009
+
+
+### Day 010
