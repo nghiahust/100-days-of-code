@@ -7,10 +7,11 @@ import random
 
 # Defined functions
 
-## Clear the console
+# Clear the console
 clearConsole = lambda: os.system('cls' if os.name in ('nt', 'dos') else 'clear')
 
-## Compare two chosen person
+
+# Compare two chosen person
 def check_answer(personA, personB, answer):
     if (personA['follower_count'] > personB['follower_count'] and answer == 'a') or (personA['follower_count'] < personB['follower_count'] and answer == 'b'):
         return True
