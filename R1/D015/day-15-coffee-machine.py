@@ -3,16 +3,16 @@ is_off = False
 
 resources = {
     'water': {
-        'quantity': 100,
+        'quantity': 1000,
         'unit': 'ml'
     },
     'milk': {
-        'quantity': 50,
+        'quantity': 500,
         'unit': 'ml'
     },
     'coffee':
     {
-        'quantity': 76,
+        'quantity': 500,
         'unit': 'g'
     }
 }
@@ -87,7 +87,7 @@ def process_coins(coffee_type):
         print("Sorry that's not enough money. Money refunded.")
         return False
     else:
-        charge = round(total_coins - MENU[coffee_type]['cost'])
+        charge = round(total_coins - MENU[coffee_type]['cost'], 2)
         print(f"Here is ${charge} in charge")
         print(f"Here is your {coffee_type}. Enjoy!")
 
