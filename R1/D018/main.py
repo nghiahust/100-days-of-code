@@ -1,17 +1,26 @@
-from turtle import Turtle, Screen
+import turtle as t
 import random
 
-my_turtle = Turtle()
-my_turtle.shape("turtle")
-my_turtle.color("aqua")
+tim = t.Turtle()
+t.colormode(255)
 
 
-for i in range(3, 10):
-    colour = (random.choice(range(255)), random.choice(range(255)), random.choice(range(255)))
-    my_turtle.color(colour)
-    num_sides = i
-    angle = 360 / num_sides
-    # my_turtle.speed(0)
-    for _ in range(num_sides):
-        my_turtle.forward(50)
-        my_turtle.right(angle)
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    return (r, g, b)
+
+
+direction = (0, 90, 180, 270)
+tim.pensize(15)
+tim.speed('normal')
+
+for _ in range(200):
+    tim.color(random_color())
+    tim.forward(30)
+    tim.setheading(random.choice(direction))
+
+
+screen = t.Screen()
+screen.exitonclick()
