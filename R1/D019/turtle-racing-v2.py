@@ -1,6 +1,6 @@
 from turtle import Turtle, Screen
 import random
-
+import time
 
 my_turtle = Turtle()
 screen = Screen()
@@ -27,7 +27,7 @@ for color in colors:
 is_on = True
 while is_on:
     for turtle in turtles:
-        turtle.forward(random.randint(0, 20))
+        turtle.forward(1)
         if turtle.xcor() >= 200:
             is_on = False
             winner = turtle.pencolor()
