@@ -4,7 +4,6 @@ from car_management import Cars
 from scoreboard import ScoreBoard
 import time
 
-
 # Create the screen
 screen = Screen()
 screen.bgcolor('white')
@@ -32,7 +31,8 @@ while game_on:
     time.sleep(0.01)
     cars.car_move()
     for car in cars.cars:
-        if car.xcor() - 30 < player.xcor() < car.xcor() + 30 and car.ycor() - 25 < player.ycor() < car.ycor() + 20:
+        if car.xcor() - 30 < player.xcor() < car.xcor() + 30 and \
+                car.ycor() - 25 < player.ycor() < car.ycor() + 20:
             score.game_over()
             game_on = False
 
@@ -40,6 +40,5 @@ while game_on:
         player.reset_position()
         cars.speed_up()
         score.update_score()
-
 
 screen.exitonclick()

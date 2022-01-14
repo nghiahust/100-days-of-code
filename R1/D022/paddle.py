@@ -1,6 +1,6 @@
 from turtle import Turtle
 
-PADDLE_LENGTH = 4
+PADDLE_LENGTH = 5
 
 class Paddle(Turtle):
     
@@ -8,7 +8,7 @@ class Paddle(Turtle):
         self.paddle = []
         self.create_paddle(x_pos)
         
-    def create_paddle(self, x_pos):
+    def create_paddle(self, x_pos)
         for i in range(PADDLE_LENGTH):
             y_pos = 20 * i
             self.add_segment(x_pos, y_pos)

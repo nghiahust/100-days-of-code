@@ -1,7 +1,9 @@
 from turtle import Turtle
 import random
 
-COLORS = ('blue', 'orange', 'green', 'red', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan')
+COLORS = (
+'blue', 'orange', 'green', 'red', 'purple', 'brown', 'pink', 'gray', 'olive',
+'cyan')
 SCREEN_LIMIT = -350
 MAX_CARS = 20
 
@@ -21,7 +23,8 @@ class Cars(Turtle):
         self.car.shape('square')
         self.car.shapesize(stretch_len=2, stretch_wid=1)
         self.car.color(random.choice(COLORS))
-        self.car.goto(random.choice(range(300, 1000, 50)), random.choice(range(-200, 200, 25)))
+        self.car.goto(random.choice(range(300, 1000, 50)),
+                      random.choice(range(-200, 200, 25)))
         self.car.setheading(180)
         self.cars.append(self.car)
 

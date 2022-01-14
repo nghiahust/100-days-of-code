@@ -8,11 +8,11 @@ import time
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 600
 
-
+1000
 screen = Screen()
 screen.setup(width=SCREEN_WIDTH, height=SCREEN_HEIGHT)
 screen.bgcolor('black')
-screen.title('Snake Game')
+screen.title('Pong Game')
 screen.tracer(0)
 
 player1 = Paddle(0 - SCREEN_WIDTH / 2 + 20)

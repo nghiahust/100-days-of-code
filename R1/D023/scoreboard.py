@@ -16,7 +16,7 @@ class ScoreBoard(Turtle):
         self.write(f'Level: {self.current_lvl}', align="Center", font=('Arial', 20, 'normal'))
 
     def game_over(self):
-        self.clear()
+        self.home()
         self.write(f'GAME OVER!', align='Center', font=('Arial', 20, 'normal'))
         self.current_lvl = 1
 

@@ -1,7 +1,7 @@
 from turtle import Turtle
 
-
 MOVE_DISTANCE = 10
+
 
 class Player(Turtle):
 

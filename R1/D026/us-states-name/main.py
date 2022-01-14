@@ -19,10 +19,7 @@ my_turtle.hideturtle()
 
 while len(answered_states) < len(states_list):
     if answer_state == "Exit":
-        missing_states = []
-        for state in states_list:
-            if state not in answered_states:
-                missing_states.append(state)
+        missing_states = [state for state in states_list if state not in answered_states]
         new_data = pandas.DataFrame(missing_states)
         new_data.to_csv('missing_states.csv')
         break
